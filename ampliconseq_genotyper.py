@@ -124,9 +124,8 @@ def ready_to_append(grouped_reads_DF,read1_file,target_locus):
         no_hit_df = pd.DataFrame(data=d)
         return(no_hit_df)
 
-# initialize DF for all samples
-#final_df = pd.DataFrame(columns=["query_id", "matched_spp", 'bp_matching'])
-
+########## End function definition section ################
+# Initialize dataframe
 meta_df = pd.DataFrame(columns=['query_id', 'matched_spp', 'bp_matching', 'amplicon_target','full_read', 'count', 'sum_reads', 'percent'])
 
 for R1 in R1s:
